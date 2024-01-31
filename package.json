@@ -2,10 +2,12 @@
   "name": "authentication",
   "version": "1.0.0",
   "description": "Criação de MicroService",
-  "main": "server.js",
+  "main": "./dist/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "commit": "npx git-cz"
+    "commit": "npx git-cz",
+    "start": "nodemon ./",
+    "build": "tsc -p ."
   },
   "keywords": [],
   "author": "Leonardo",
