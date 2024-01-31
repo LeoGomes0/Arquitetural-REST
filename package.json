@@ -1,7 +1,7 @@
 {
-  "name": "arquitetural-rest",
+  "name": "authentication",
   "version": "1.0.0",
-  "description": "",
+  "description": "Criação de MicroService",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "commitizen": "^4.3.0",
-    "cz-conventional-changelog": "^3.3.0"
+    "cz-conventional-changelog": "^3.3.0",
+    "nodemon": "^3.0.3"
   },
   "config": {
     "commitizen": {
