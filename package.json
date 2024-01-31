@@ -2,7 +2,7 @@
   "name": "authentication",
   "version": "1.0.0",
   "description": "Criação de MicroService",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "commit": "npx git-cz"
@@ -11,9 +11,12 @@
   "author": "Leonardo",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.11.13",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
-    "nodemon": "^3.0.3"
+    "nodemon": "^3.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
   },
   "config": {
     "commitizen": {
