@@ -1,10 +1,11 @@
 import express, { Request, Response, NextFunction } from "express";
-import usersRoute from "./routes/usersRoute";
+import Route from "./routes/usersRoute";
+
 
 const app = express();
 
 
-app.use(usersRoute);
+app.use(Route);
 
 
 app.listen(3000, () => {

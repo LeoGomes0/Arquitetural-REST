@@ -1,11 +1,16 @@
 import { Router, Request, Response, NextFunction } from "express";
 
 
-const usersRoute = Router();
+const Route = Router();
 
-usersRoute.get("/users", (req: Request, res: Response, next: NextFunction) => {
+Route.get("/users", (req: Request, res: Response, next: NextFunction) => {
     const users = [{ userName: "Leonardo" }]
     res.status(200).json({ users })
 });
 
-export default usersRoute;
+Route.get("/users/:id", (req: Request<{ id: number }>, res: Response, next: NextFunction) => {
+    const id = req.params.id
+    res.status(200).json({ id })
+})
+
+export default Route;
